@@ -1,0 +1,25 @@
+.menu {
+    position: absolute;
+    top: 25px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 320px 216px 350px;
+    column-gap: 115px;
+    align-items: center;
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    &__active {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__search {
+        width: 80px;
+    }
+}
