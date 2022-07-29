@@ -13,6 +13,10 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 150%;
+        a {
+            list-style-type: none;
+            color: #fff;
+        }
     }
     &__active {
         display: flex;
@@ -21,5 +25,39 @@
     }
     &__search {
         width: 80px;
+        form {
+            position: relative;
+            input {
+                margin-left: 13px;
+                width: 80px;
+                border: none;
+                background-color: transparent;
+                padding: 0 5px;
+                color: #fff;
+                &::placeholder {
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    text-align: right;
+                }
+            }
+            a {
+                position: absolute;
+                display: block;
+                left: -15px;
+            }
+        }
+        
+    }
+    &__signup {
+        a {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #fff;
+            list-style-type: none;
+        }
+
     }
 }
