@@ -1,0 +1,82 @@
+.catalog {
+    padding-top: 50px;
+    &__title {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        color: $main_color;
+        text-align: center;
+    }
+    &__subtitle {
+        font-family: 'Noto serif';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        color: $main_color;
+    }
+    &__tabs {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__tab {
+        position: relative;
+        width: 165px;
+        height: 55px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #D6D6D6;
+        background-color: #fff;
+        z-index: 10;
+        cursor: pointer;
+        /* &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.0001);
+            border: 1px solid #D6D6D6;
+            width: 165px;
+            min-height: 100%;
+            z-index: 1;
+        } */
+        &_active {
+            background-color: $main_color;
+            color: #fff;
+        }
+    }
+    &__content {
+        margin-top: 55px;
+        display: none;
+        grid-template-columns: repeat(3, minmax(auto, 350px));
+        grid-template-rows: repeat(2, minmax(auto, 280px));
+        grid-auto-rows: minmax(auto, 280px);
+        gap: 30px;
+        &_active {
+            display: grid;
+        }
+    }
+    &-item {
+        position: relative;
+        &__subtitle {
+            bottom: 30px;
+            position: absolute;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transform: translateX(-50%);
+            left: 50%;
+            color: #fff;
+        }
+    }
+}
