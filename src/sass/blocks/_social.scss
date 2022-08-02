@@ -1,0 +1,53 @@
+.social {
+    padding-top: 120px;
+    &__title {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: center;
+        color: $main_color;
+    }
+    &__subtitle {
+        font-family: 'Noto Serif';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        margin-top: 15px;
+        text-align: center;
+        color: $main_color;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 300px) / repeat(4, 277.5px);
+    }
+    &__item {
+        &_1 {
+            position: relative;
+            grid-column: 1 / 3;
+            &:before {
+                content: url('../icons/play_btn.png');
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+            }
+        }
+        &_6 {
+            position: relative;
+            grid-column: 3 / 5;
+            &:before {
+                content: url('../icons/play_btn.png');
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 50%;
+                transform: translateX(-50%);
+                cursor: pointer;
+            }
+        }
+    }
+}
