@@ -1,0 +1,99 @@
+.mailing {
+    margin-top: 150px;
+    background: url('../img/black_bg.jpg') center (center / cover) no-repeat;
+    min-height: 480px;
+    &__title {
+        padding-top: 100px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: center;
+        color: #fff;
+    }
+    &__subtitle {
+        font-family: 'Noto Serif';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        color: #fff;
+    }
+    &__wrapper {
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        width: 780px;
+        min-height: 115px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: center;
+        min-width: 250px;
+        &-text {
+            display: block;
+            position: relative;
+            color: #fff;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            margin-bottom: 15px;
+            &:before {
+                content: url('../icons/mailing/arrow.png');
+                position: absolute;
+                left: -37px;
+                top: 2px;
+            }
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    &__form {
+        position: relative;
+        width: 418px;
+        height: 85px;
+        background: #fff;
+        padding: 20px 22px;
+        
+        &:after {
+            position: absolute;
+            content: '';
+            width: 448px;
+            height: 113px;
+            border: 1px solid #FFFFFF;
+            left: -15px;
+            top: -14px;
+        }    
+    }
+    &__input {
+        display: flex;
+        justify-content: space-between;
+        
+        input {
+            width: 200px;
+            height: 45px;
+            padding: 15px 20px;
+            z-index: 10;
+        }
+        button {
+            border: 1px solid #FFFFFF;
+            background: $main_color;
+            width: 159px;
+            height: 45px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #fff;
+            z-index: 10;
+        }
+    }
+    
+}
