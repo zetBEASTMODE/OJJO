@@ -16,6 +16,10 @@
         margin-top: 10px;
         width: 255px;
         border: 1px solid #333333;
+        &_large {
+            margin-top: 60px;
+            width: 1110px;
+        }
     }
     &__item {
         &-descr {
@@ -34,5 +38,37 @@
                 margin-bottom: 0;
             }
         }
+        &-social {
+            margin-top: 5px;
+            img {
+                margin-right: 20px;
+            }
+        }
+        &-tel {
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+            &:before {
+                content: url('../icons/footer/phone.svg');
+                position: absolute;
+                top: 2px;
+                left: 0;
+            }
+        }
+        &-email {
+            position: relative;
+            padding-left: 40px;
+            &:before {
+                content: url('../icons/footer/mail.svg');
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+        }
+    }
+    &__agent {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
     }
 }
