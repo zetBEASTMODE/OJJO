@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 80px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 255px);
+        column-gap: 30px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $main_color;
+    }
+    &__divider {
+        margin-top: 10px;
+        width: 255px;
+        border: 1px solid #333333;
+    }
+    &__item {
+        &-descr {
+            margin-top: 30px;
+            display: flex;
+            align-items: space-around;
+            flex-direction: column;
+        }
+        &-links {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $main_color;
+            margin-bottom: 15px;
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
