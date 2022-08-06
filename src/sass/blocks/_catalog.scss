@@ -24,6 +24,9 @@
     }
     &__tab {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 165px;
         height: 55px;
         font-weight: 500;
@@ -35,21 +38,24 @@
         background-color: #fff;
         z-index: 10;
         cursor: pointer;
-        /* &:after {
+        &:after {
             content: "";
             display: block;
             position: absolute;
-            top: 7px;
+            top: -7px;
             left: 5px;
             background-color: rgba(0, 0, 0, 0.0001);
             border: 1px solid #D6D6D6;
             width: 165px;
             min-height: 100%;
             z-index: 1;
-        } */
+        }
         &_active {
             background-color: $main_color;
             color: #fff;
+            &:after {
+                display: none;
+            }
         }
     }
     &__content {

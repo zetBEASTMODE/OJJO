@@ -70,5 +70,18 @@
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+        &-item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: $main_color;
+        }
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+            text-decoration-line: underline;
+            color: $main_color;
+        }
     }
 }
